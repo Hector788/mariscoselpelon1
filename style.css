@@ -369,16 +369,16 @@ p {
     .nav__ul li {
         align-items: center;
         margin-top: 60px;
-        font-size: 140px;
+        font-size: 80px;
     }
     .nav__ul i {
         align-items: center;
-        font-size: 140px;
+        font-size: 80px;
     }
     .nav__ul li:hover {
         align-items: center;
         margin-top: 15px;
-        font-size: 145px;
+        font-size: 85px;
     }
     #slider {
         overflow: hidden;
@@ -638,18 +638,18 @@ p {
         background: rgb(0, 0, 0);
         color: whitesmoke;
         height: 30px;
-        font-size: 30px;
+        font-size: 25px;
     }
     .nav__li {
         display: inline-block;
         padding: 12px;
         color: whitesmoke;
-        font-size: 30px;
+        font-size: 25px;
     }
     .nav__li:hover>a {
         color: rgb(241, 237, 237);
         text-decoration: none;
-        font-size: 35px;
+        font-size: 28px;
         transition: all 1s;
         opacity: 1;
         filter: brightness(100%);
@@ -657,7 +657,7 @@ p {
     .nav__li:hover {
         color: rgb(250, 8, 8);
         text-decoration: none;
-        font-size: 31px;
+        font-size: 28px;
         transition: all 1s;
         opacity: 1;
         filter: brightness(100%);
@@ -667,13 +667,13 @@ p {
         text-decoration: none;
         font-size: 30px;
         transition: all 1s;
-        font-size: 80px;
+        font-size: 25px;
     }
     .nav__li i {
         box-sizing: border-box;
         text-align: right;
         margin-right: 5px;
-        font-size: 30px;
+        font-size: 26px;
         transition: all 1s
     }
     .main-titler {
