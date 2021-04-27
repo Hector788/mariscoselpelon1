@@ -3,6 +3,11 @@
   margin: 0;
   font-family: "Satisfy", cursive;
 }
+.header-container {
+  line-height: 35px;
+
+  background: rgb(252, 8, 8);
+}
 
 /*Iconos de menu resposivo*/
 
@@ -11,6 +16,67 @@
 }
 
 /*Navegacion menu responsivo*/
+.nav__responsive-ul {
+  display: none;
+}
+.nav {
+  width: 100%;
+  color: whitesmoke;
+  height: 30px;
+  font-size: 25px;
+  position: fixed;
+  top: 1px;
+  left: 1px;
+  z-index: 2000;
+}
+.nav__li {
+  display: inline-block;
+  padding: 12px;
+  color: whitesmoke;
+  font-size: 25px;
+}
+.nav__li:hover > a {
+  color: rgb(241, 237, 237);
+  text-decoration: none;
+  font-size: 28px;
+  transition: all 1s;
+  opacity: 1;
+  filter: brightness(100%);
+}
+.nav__li:hover {
+  color: rgb(250, 8, 8);
+  text-decoration: none;
+  font-size: 28px;
+  transition: all 1s;
+  opacity: 1;
+  filter: brightness(100%);
+}
+.nav__li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 30px;
+  transition: all 1s;
+  font-size: 25px;
+}
+.nav__li i {
+  box-sizing: border-box;
+  text-align: right;
+  margin-right: 5px;
+  font-size: 26px;
+  transition: all 1s;
+}
+.main-titler {
+  margin-top: -300px;
+}
+.nav__responsive-button {
+  position: fixed;
+  width: 100%;
+  font-size: 25px;
+  background: rgb(223, 223, 223);
+  top: -35px;
+  right: 135px;
+  z-index: 100;
+}
 
 .nav__responsive-ul {
   display: none;
@@ -19,32 +85,36 @@
 /* menu Navegacion cuando no es responsive*/
 
 .nav {
-  background: rgb(0, 0, 0);
   color: whitesmoke;
-  height: 100px;
-  font-size: 60px;
+  height: 80px;
+  padding: 5px;
+  display: flex;
+}
+
+.nav__li-container {
+  align-items: right;
+  position: absolute;
+  left: 1%;
+  top: 1px;
+  z-index: 10;
 }
 
 .nav__li {
   display: inline-block;
   padding: 2px;
   color: whitesmoke;
-  font-size: 40px;
 }
 
-.nav__li:hover > a {
+.nav__li-container:hover > a {
   color: rgb(241, 237, 237);
   text-decoration: none;
-  font-size: 45px;
-  transition: all 1s;
+  font-size: 10px;
   opacity: 1;
   filter: brightness(100%);
 }
 
 .nav__li:hover {
-  color: rgb(250, 8, 8);
   text-decoration: none;
-  font-size: 35px;
   transition: all 1s;
   opacity: 1;
   filter: brightness(100%);
@@ -53,7 +123,6 @@
 .nav__li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 55px;
   transition: all 1s;
 }
 
@@ -61,27 +130,7 @@
   box-sizing: border-box;
   text-align: right;
   margin-right: 5px;
-  font-size: 35px;
   transition: all 1s;
-}
-
-.nav__responsive-button-container {
-  position: absolute;
-  width: 100%;
-  font-size: 25px;
-  background: rgb(223, 223, 223);
-  margin-top: -65px;
-  height: 37px;
-  z-index: 100;
-  position: fixed;
-}
-
-.nav__responsive-button {
-  text-align: right;
-  margin-top: 10px;
-  margin-left: -15px;
-  width: 100%;
-  position: fixed;
 }
 
 /*carousel  de fotos*/
@@ -208,8 +257,8 @@ p {
   text-align: right;
   position: fixed;
   bottom: 5px;
-  right: 5px;
-  font-size: 30px;
+  right: 10px;
+  font-size: 35px;
   opacity: 0.7;
   z-index: 600;
 }
@@ -344,7 +393,7 @@ p {
     }
   }
   .nav__ul a {
-    font-size: 60px;
+    font-size: 30px;
   }
 }
 
@@ -360,11 +409,11 @@ p {
   .nav__ul li {
     align-items: center;
     margin-top: 60px;
-    font-size: 80px;
+    font-size: 40px;
   }
   .nav__ul i {
     align-items: center;
-    font-size: 80px;
+    font-size: 40px;
   }
   .nav__ul li:hover {
     align-items: center;
@@ -429,7 +478,7 @@ p {
     background-color: whitesmoke;
     border-radius: 50%;
     padding: 20px;
-    font-size: 240px;
+    font-size: 40px;
   }
   .icon2 {
     color: rgb(0, 161, 40);
@@ -454,7 +503,7 @@ p {
     font-size: 240px;
   }
   .nav__ul a {
-    font-size: 84px;
+    font-size: 40px;
   }
   .slider3 {
     width: 50%;
@@ -468,7 +517,7 @@ p {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  /*diseño y modificaciones de lista de productos hadaptabilidad*/
+  /*diseño y modificaciones de lista de productos adaptabilidad*/
   .producto-container {
     display: flex;
     justify-content: space-between;
@@ -507,7 +556,7 @@ p {
   }
 }
 
-/*diseño y modificaciones de lista de productos hadaptabilidad*/
+/*diseño y modificaciones de lista de productos adaptabilidad*/
 
 @media screen and (max-width: 785px) {
   .producto {
@@ -621,54 +670,7 @@ p {
     color: rgb(250, 12, 12);
     font-size: 35px;
   }
-  .nav__responsive-ul {
-    display: none;
-  }
-  nav {
-    background: rgb(0, 0, 0);
-    color: whitesmoke;
-    height: 30px;
-    font-size: 25px;
-  }
-  .nav__li {
-    display: inline-block;
-    padding: 12px;
-    color: whitesmoke;
-    font-size: 25px;
-  }
-  .nav__li:hover > a {
-    color: rgb(241, 237, 237);
-    text-decoration: none;
-    font-size: 28px;
-    transition: all 1s;
-    opacity: 1;
-    filter: brightness(100%);
-  }
-  .nav__li:hover {
-    color: rgb(250, 8, 8);
-    text-decoration: none;
-    font-size: 28px;
-    transition: all 1s;
-    opacity: 1;
-    filter: brightness(100%);
-  }
-  .nav__li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 30px;
-    transition: all 1s;
-    font-size: 25px;
-  }
-  .nav__li i {
-    box-sizing: border-box;
-    text-align: right;
-    margin-right: 5px;
-    font-size: 26px;
-    transition: all 1s;
-  }
-  .main-titler {
-    margin-top: -300px;
-  }
+
   .icon1 {
     color: rgb(7, 7, 255);
     font-size: 60px;
@@ -850,7 +852,6 @@ p {
     display: none;
   }
   .nav__responsive-ul {
-    background: rgba(248, 11, 11, 0.609);
     height: 0px;
     width: 100%;
     z-index: 200;
@@ -859,7 +860,7 @@ p {
     display: block;
     position: absolute;
     width: 100%;
-    background: rgb(0, 0, 0);
+
     margin-top: 36px;
     padding-top: 27px;
     height: 50;
@@ -994,4 +995,24 @@ p {
     color: red;
     text-align: center;
   }
+}
+
+/*estilizando el footer */
+
+.footer {
+  width: 100%;
+  color: whitesmoke;
+  background-color: red;
+  text-align: center;
+  line-height: 35px;
+}
+
+.contrataciones {
+  background-color: rgb(9, 9, 9);
+  line-height: 25px;
+  background-color: rgb(68, 0, 255);
+}
+
+.slogan1 {
+  color: rgb(255, 255, 255);
 }
