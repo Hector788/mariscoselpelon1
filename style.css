@@ -91,6 +91,31 @@
 .main-titler {
   margin-top: -300px;
 }
+<<<<<<< HEAD
+=======
+.nav__responsive-button {
+  position: fixed;
+  width: 100%;
+  font-size: 25px;
+  background: rgb(223, 223, 223);
+  top: -35px;
+  right: 155px;
+  z-index: 100;
+}
+
+.nav__responsive-ul {
+  display: none;
+}
+
+/* menu Navegacion cuando no es responsive*/
+
+.nav {
+  color: whitesmoke;
+  height: 80px;
+  padding: 5px;
+  display: flex;
+}
+>>>>>>> 4aba217ad7f8d5898055841238caa23bbf0f53b9
 
 .nav__li-container {
   align-items: right;
