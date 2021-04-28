@@ -5,7 +5,6 @@
 }
 .header-container {
   line-height: 35px;
-
   background: rgb(252, 8, 8);
 }
 
@@ -19,6 +18,30 @@
 .nav__responsive-ul {
   display: none;
 }
+
+.nav__responsive-button {
+  position: fixed;
+  width: 100%;
+  font-size: 25px;
+  background: rgb(223, 223, 223);
+  top: -35px;
+  right: 150px;
+  z-index: 100;
+}
+
+.nav__responsive-ul {
+  display: none;
+}
+
+/* menu Navegacion cuando no es responsive*/
+
+.nav {
+  color: whitesmoke;
+  height: 80px;
+  padding: 5px;
+  display: flex;
+}
+
 .nav {
   width: 100%;
   color: whitesmoke;
@@ -67,28 +90,6 @@
 }
 .main-titler {
   margin-top: -300px;
-}
-.nav__responsive-button {
-  position: fixed;
-  width: 100%;
-  font-size: 25px;
-  background: rgb(223, 223, 223);
-  top: -35px;
-  right: 135px;
-  z-index: 100;
-}
-
-.nav__responsive-ul {
-  display: none;
-}
-
-/* menu Navegacion cuando no es responsive*/
-
-.nav {
-  color: whitesmoke;
-  height: 80px;
-  padding: 5px;
-  display: flex;
 }
 
 .nav__li-container {
@@ -397,7 +398,7 @@ p {
   }
 }
 
-/*Aplicar estas propiedades hasta que la pantalla tengo un maximo de 600px si tiene mas dejar de aplicar*/
+/*Aplicar estas propiedades hasta que la pantalla tenga un maximo de 600px si tiene mas dejar de aplicar*/
 
 @media screen and (min-width: 1028px) {
   * {
@@ -405,6 +406,7 @@ p {
   }
   body {
     background-color: rgb(7, 7, 7) (8, 8, 8);
+    font-size: 40px;
   }
   .nav__ul li {
     align-items: center;
@@ -471,36 +473,36 @@ p {
   }
   .icon1 {
     color: rgb(7, 7, 255);
-    font-size: 200px;
+    font-size: 100px;
   }
   .icon1:hover {
     color: blue;
     background-color: whitesmoke;
     border-radius: 50%;
     padding: 20px;
-    font-size: 40px;
+    font-size: 110px;
   }
   .icon2 {
     color: rgb(0, 161, 40);
-    font-size: 200px;
+    font-size: 100px;
   }
   .icon2:hover {
     color: rgb(0, 161, 40);
     background-color: whitesmoke;
     border-radius: 50%;
     padding: 20px;
-    font-size: 240px;
+    font-size: 110px;
   }
   .icon3 {
     color: rgb(251, 2, 210);
-    font-size: 200px;
+    font-size: 100px;
   }
   .icon3:hover {
     color: rgb(251, 4, 210);
     background-color: whitesmoke;
     padding: 20px;
     border-radius: 50%;
-    font-size: 240px;
+    font-size: 110px;
   }
   .nav__ul a {
     font-size: 40px;
@@ -512,8 +514,8 @@ p {
     text-align: center;
   }
   .texto-acerca {
-    padding: 100px;
-    font-size: 200px;
+    padding: 20px;
+    font-size: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -525,12 +527,12 @@ p {
     align-items: center;
   }
   .texto-producto {
-    padding: 100px;
-    font-size: 200px;
+    padding: 20px;
+    font-size: 40px;
   }
   .precio-producto {
     position: absolute;
-    font-size: 240px;
+    font-size: 40px;
     margin-bottom: 80px;
     margin-top: -30px;
     margin-left: 3200px;
@@ -545,14 +547,27 @@ p {
     border-radius: 10%;
     object-fit: cover;
     padding: 20px;
-    max-width: 1960px;
-    height: 2200px;
+    max-width: 400px;
+    height: 650px;
   }
   .nombre-producto {
     margin-top: 80px;
-    font-size: 160px;
+    font-size: 50px;
     text-align: center;
     color: red;
+  }
+
+  .information {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  .contrataciones {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    height: 150px;
   }
 }
 
@@ -989,7 +1004,7 @@ p {
   }
   .texto-producto {
     padding: 10px;
-    font-size: 30px;
+    font-size: 20px;
   }
   .acerca {
     color: red;
@@ -1002,17 +1017,56 @@ p {
 .footer {
   width: 100%;
   color: whitesmoke;
-  background-color: red;
+  background: #f00000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dc281e,
+    #f00000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dc281e,
+    #f00000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   text-align: center;
-  line-height: 35px;
+  line-height: 50px;
+  font-size: 14px;
+  border: 1px solid rgb(252, 252, 252);
 }
 
 .contrataciones {
-  background-color: rgb(9, 9, 9);
-  line-height: 25px;
-  background-color: rgb(68, 0, 255);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid rgb(252, 252, 252);
 }
 
 .slogan1 {
   color: rgb(255, 255, 255);
+}
+
+.tel-container {
+  padding-top: -20px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 10px;
+  background-color: black;
+  align-items: center;
+  text-align: center;
 }
